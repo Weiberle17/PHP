@@ -6,16 +6,16 @@
         private $hersteller;
 
         public function __construct($farbe, $hersteller) {
-          $$this->farbe = $farbe;
-          $$this->hersteller = $hersteller;
+          $this->farbe = $farbe;
+          $this->hersteller = $hersteller;
         }
 
         public function Starten() {
-          echo "Das Fahrzeug ist gestartet <br>"
+          echo "Das Fahrzeug ist gestartet <br>";
         }
 
         public function Stoppen() {
-          echo "Das Fahrzeug ist gestoppt <br>"
+          echo "Das Fahrzeug ist gestoppt <br>";
         }
       }
 

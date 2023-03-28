@@ -1,17 +1,20 @@
 <html>
   <body>
     <?php
+      include ("aufgabe8.php");
+
       class Auto extends Fahrzeug {
-        private $kilometerstand;
+        public $kilometerstand;
 
         public function __construct($farbe, $hersteller, $kilometerstand) {
-          parent::__construct();
+          $this->farbe = $farbe;
+          $this->hersteller = $hersteller;
           $this->kilometerstand = $kilometerstand;
         }
 
         public function Fahren($strecke) {
-          $kilometerstand += $strecke;
-          echo "Der neue Kilometerstand beträgt: <?= $kilometerstand ?>km.<br>" 
+          $this->kilometerstand = $this->kilometerstand + $strecke;
+          echo "Der neue Kilometerstand beträgt: ".  $this->kilometerstand ." km.<br>";
         }
       }
 
