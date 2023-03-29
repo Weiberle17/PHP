@@ -12,7 +12,7 @@
         echo "Ergebnis:<br>";
       }
       else {
-        echo "Keine Ergebnisse<br>";
+        echo "Keine Ergebnisse.<br>";
       }
     }
 
